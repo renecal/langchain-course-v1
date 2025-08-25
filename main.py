@@ -24,7 +24,7 @@ agent = create_react_agent(
         )
 
 # Ejecuta el agente con las tools y activa el modo detallado
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 
 # Crea la cadena a partir del agente
 chain = agent_executor
