@@ -9,6 +9,9 @@ load_dotenv()
 
 tools = [TavilySearch()]
 
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+react_prompt = hub.pull("hwchase17/react")
+
 def main():
     print("Hello from langchain-course-v1!")
 

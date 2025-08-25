@@ -7,7 +7,8 @@ Tavily from search result in internet
 ## tools
 
 - [LangChain](https://langchain.com/)
-- [LangChain Hub](https://huggingface.co/spaces/langchain/langchain-hub)
+- [LangSmith Hub](https://smith.langchain.com/hub?organizationId=5c031c7d-225f-41cf-9def-21161772e1fa)
+- [hub hwchase17/react](https://smith.langchain.com/hub/hwchase17/react?organizationId=5c031c7d-225f-41cf-9def-21161772e1fa)
 - [LangChain Documentation](https://langchain.readthedocs.io/en/latest/)
 - [Tools](https://python.langchain.com/docs/integrations/tools/)
 - [Tavily Search](https://python.langchain.com/docs/integrations/tools/tavily_search/)
