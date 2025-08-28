@@ -49,8 +49,14 @@ agent_executor = AgentExecutor(
     agent=agent, tools=tools, verbose=True, handle_parsing_errors=True
 )
 
-# Crea la cadena a partir del agente
-chain = agent_executor
+# Extrae la salida del agente
+extract_output = RunnableLambda(lambda x: x["output"])
+
+# Parsea la salida del agente 
+parse_output = RunnableLambda(lambda x: output_parser.parse(x))
+
+# Crea la cadena a partir del agente, extrayendo y parseando la salida
+chain = agent_executor | extract_output | parse_output
 
 
 def main():

@@ -12,9 +12,18 @@ Tavily from search result in internet
 - [LangChain Documentation](https://langchain.readthedocs.io/en/latest/)
 - [Tools](https://python.langchain.com/docs/integrations/tools/)
 - [Tavily Search](https://python.langchain.com/docs/integrations/tools/tavily_search/)
+- [PromptTemplate](https://python.langchain.com/api_reference/core/prompts/langchain_core.prompts.prompt.PromptTemplate.html)
 
 ### Pydantic
-Pydantic is a Python library that provides data validation and settings management using Python's type hints, ensuring data integrity and enabling robust, reliable code. It creates models that enforce data types and structures at runtime, making it easier to work with dynamic data, catch errors early, and serialize/deserialize data into formats like JSON. 
+Pydantic is a Python library for data validation and settings management using Python type hints. In LangChain, Pydantic is used to define structured data models for inputs and outputs, ensuring type safety and reliable data parsing. This integration allows you to create robust output parsers, validate responses from language models, and serialize/deserialize data efficiently within AI workflows.
 
 - [Output Parser](https://python.langchain.com/docs/concepts/output_parsers/)
 - [LangChain PydanticOutputParser](https://python.langchain.com/api_reference/core/output_parsers/langchain_core.output_parsers.pydantic.PydanticOutputParser.html)
+
+## RunnableLambda
+RunnableLambda is a LangChain class that allows you to create executable components from lambda functions (anonymous functions). It is used to encapsulate custom logic that can be integrated into processing chains, making it easy to compose and reuse functions within AI workflows.
+
+- [LCEL](https://python.langchain.com/docs/concepts/lcel/)
+- [RunnableLambda](https://python.langchain.com/api_reference/core/runnables/langchain_core.runnables.base.RunnableLambda.html)
+- [Runnable Interface](https://python.langchain.com/docs/concepts/runnables/)
+
